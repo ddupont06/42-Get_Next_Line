@@ -59,7 +59,7 @@ static = [Second lineEOF]
 returned line = [Second lineEOF]
 ```
 
-Note that to allow the program to handle mutiple `fd` at the same time (cf. bonus part in [`subjet`](Get_Next_Line.pdf)), `static` is declared in [`get_next_line_bonus`](get_next_line_bonus.c) as an array of strings where each row is corresponding to one file descriptor.
+Note that to allow the program to handle mutiple `fd` at the same time (cf. bonus part in [`subject`](Get_Next_Line.pdf)), `static` is declared in [`get_next_line_bonus`](get_next_line_bonus.c) as an array of strings where each row is corresponding to one file descriptor.
 
 ## Usage
 
