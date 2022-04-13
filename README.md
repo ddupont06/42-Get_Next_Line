@@ -59,7 +59,7 @@ static = [Second lineEOF]
 returned line = [Second lineEOF]
 ```
 
-Note that to allow the program to handle mutiple `fd` at the same time (cf. bonus part in [`subject`](Get_Next_Line.pdf)), `static` is declared in [`get_next_line_bonus`](get_next_line_bonus.c) as an array of strings where each row is corresponding to one file descriptor.
+Note that in order to allow the program to handle mutiple `fd` at the same time (cf. bonus part in [`subject`](Get_Next_Line.pdf)), we declare `static` in [`get_next_line_bonus`](get_next_line_bonus.c) as an array of pointers to strings where each string corresponds to one `fd`. Moreover, the size of the array is fixed to 1024 since the number of open files (`fd`) limit is set to 1024 by default on GNU/Linux and macOS operating systems.
 
 ## Usage
 
